@@ -1,9 +1,13 @@
-import { CheckCircle, Zap, Code, Shield, ArrowRight, MessageSquare, Rocket, FileText } from "lucide-react";
+import { CheckCircle, Zap, Code, Shield, ArrowRight, MessageSquare, Rocket, FileText, Send } from "lucide-react";
 import Link from "next/link";
 
 export default function LandingPage() {
   return (
     <div className="flex flex-col min-h-screen bg-white text-slate-900">
+      {/* Flash Sale Banner */}
+      <div className="bg-blue-600 text-white py-2 px-4 text-center text-sm font-bold animate-pulse">
+        ⚡ FLASH SALE: Book in the next 4 hours and get a FREE 30-min follow-up session! (Only 2 spots left today)
+      </div>
       {/* Header */}
       <header className="px-4 lg:px-6 h-16 flex items-center border-b">
         <div className="flex items-center gap-2 font-bold text-xl">
@@ -291,6 +295,35 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
+
+        {/* Quick Question Widget */}
+        <div className="fixed bottom-6 right-6 z-50">
+          <div className="bg-white border-2 border-blue-600 rounded-2xl shadow-2xl p-6 max-w-[300px]">
+            <h3 className="font-bold text-lg mb-2 flex items-center gap-2">
+              <MessageSquare className="h-5 w-5 text-blue-600" /> Have a quick tech question?
+            </h3>
+            <p className="text-sm text-slate-500 mb-4">
+              Not ready for a full call? Drop your question here and I'll reply within 60 mins.
+            </p>
+            <form className="space-y-3">
+              <input
+                type="text"
+                placeholder="Your email"
+                className="w-full text-sm border p-2 rounded-lg"
+              />
+              <textarea
+                placeholder="What are you stuck on?"
+                className="w-full text-sm border p-2 rounded-lg h-20"
+              ></textarea>
+              <button
+                type="button"
+                className="w-full bg-blue-600 text-white text-sm font-bold py-2 rounded-lg flex items-center justify-center gap-2"
+              >
+                Send Question <Send className="h-4 w-4" />
+              </button>
+            </form>
+          </div>
+        </div>
 
         {/* CTA Section */}
         <section className="w-full py-12 md:py-24 lg:py-32 bg-blue-600 text-white">

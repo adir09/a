@@ -6,9 +6,7 @@
 - Local:         http://localhost:3000
 - Network:       http://192.168.0.2:3000
 - Environments: .env.local
-✓ Ready in 527ms
+✓ Ready in 556ms
 
- GET / 200 in 859ms (next.js: 274ms, application-code: 585ms)
- GET /checklist 200 in 681ms (next.js: 611ms, application-code: 70ms)
- GET / 200 in 67ms (next.js: 5ms, application-code: 62ms)
+ GET / 200 in 985ms (next.js: 292ms, application-code: 693ms)
 [?25h
