@@ -1,0 +1,16 @@
+
+> tmp-app@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.2:3000
+- Environments: .env.local
+✓ Ready in 534ms
+
+○ Compiling / ...
+ GET / 200 in 4.6s (next.js: 4.0s, application-code: 646ms)
+STRIPE_SECRET_KEY is not set. Redirecting to demo success page.
+ POST /api/checkout 303 in 1162ms (next.js: 1136ms, application-code: 27ms)
+ GET /success?demo=true 200 in 947ms (next.js: 807ms, application-code: 140ms)
+[?25h
