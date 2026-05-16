@@ -6,7 +6,7 @@
 - Local:         http://localhost:3000
 - Network:       http://192.168.0.2:3000
 - Environments: .env.local
-✓ Ready in 556ms
+✓ Ready in 521ms
 
- GET / 200 in 985ms (next.js: 292ms, application-code: 693ms)
+ GET /admin/status 200 in 1248ms (next.js: 905ms, application-code: 343ms)
 [?25h
