@@ -62,8 +62,9 @@ The easiest way to deploy this is with **Vercel**:
 
 1. **Customize:** Update the copy in `src/app/page.tsx` with your specific expertise.
 2. **Stripe:** Set up a real Stripe account and replace the test keys.
-3. **Share:** Post your link on Twitter/X, Indie Hackers, or Reddit (r/startup) targeting solo founders.
-4. **Deliver:** Once someone pays, you'll get an email. Reach out to them to schedule the call!
+3. **Market:** Use the templates and strategy in `MARKETING.md` to start driving traffic.
+4. **Free Value:** Send people to `/checklist` to build trust before asking for the sale.
+5. **Deliver:** Once someone pays, you'll get an email. Reach out to them to schedule the call!
 
 ---
 

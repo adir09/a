@@ -6,11 +6,9 @@
 - Local:         http://localhost:3000
 - Network:       http://192.168.0.2:3000
 - Environments: .env.local
-✓ Ready in 534ms
+✓ Ready in 527ms
 
-○ Compiling / ...
- GET / 200 in 4.6s (next.js: 4.0s, application-code: 646ms)
-STRIPE_SECRET_KEY is not set. Redirecting to demo success page.
- POST /api/checkout 303 in 1162ms (next.js: 1136ms, application-code: 27ms)
- GET /success?demo=true 200 in 947ms (next.js: 807ms, application-code: 140ms)
+ GET / 200 in 859ms (next.js: 274ms, application-code: 585ms)
+ GET /checklist 200 in 681ms (next.js: 611ms, application-code: 70ms)
+ GET / 200 in 67ms (next.js: 5ms, application-code: 62ms)
 [?25h

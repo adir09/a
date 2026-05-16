@@ -1,4 +1,5 @@
-import { CheckCircle, Zap, Code, Shield, ArrowRight, MessageSquare, Rocket } from "lucide-react";
+import { CheckCircle, Zap, Code, Shield, ArrowRight, MessageSquare, Rocket, FileText } from "lucide-react";
+import Link from "next/link";
 
 export default function LandingPage() {
   return (
@@ -10,6 +11,9 @@ export default function LandingPage() {
           <span>SoloCTO</span>
         </div>
         <nav className="ml-auto flex gap-4 sm:gap-6">
+          <Link className="text-sm font-medium hover:underline underline-offset-4" href="/checklist">
+            Free Checklist
+          </Link>
           <a className="text-sm font-medium hover:underline underline-offset-4" href="#benefits">
             Benefits
           </a>
@@ -124,6 +128,43 @@ export default function LandingPage() {
                 <div className="flex h-12 w-12 items-center justify-center rounded-full border-2 border-blue-500 text-xl font-bold">3</div>
                 <h3 className="text-xl font-bold">Actionable Roadmap</h3>
                 <p className="text-slate-400 text-center">Receive a clear, step-by-step document on exactly what to build next.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Case Studies / Success Stories */}
+        <section id="case-studies" className="w-full py-12 md:py-24 lg:py-32">
+          <div className="container px-4 md:px-6 mx-auto">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">Success Stories</h2>
+            <div className="grid gap-8 md:grid-cols-2">
+              <div className="flex flex-col overflow-hidden border rounded-2xl shadow-sm bg-white">
+                <div className="p-8">
+                  <div className="flex items-center gap-2 text-blue-600 font-bold mb-4">
+                    <FileText className="h-5 w-5" /> Case Study: SaaS Migration
+                  </div>
+                  <h3 className="text-2xl font-bold mb-2">Saving $2,000/mo on Cloud Costs</h3>
+                  <p className="text-slate-600 mb-6">
+                    A solo founder was using an over-provisioned Kubernetes cluster for a simple CRUD app. We migrated them to a serverless architecture in 60 minutes.
+                  </p>
+                  <div className="bg-slate-50 p-4 rounded-xl border border-slate-100 italic text-slate-500">
+                    "The best $100 I ever spent. The ROI was immediate."
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col overflow-hidden border rounded-2xl shadow-sm bg-white">
+                <div className="p-8">
+                  <div className="flex items-center gap-2 text-blue-600 font-bold mb-4">
+                    <FileText className="h-5 w-5" /> Case Study: Launch Speed
+                  </div>
+                  <h3 className="text-2xl font-bold mb-2">From "Stuck" to "Live" in 7 Days</h3>
+                  <p className="text-slate-600 mb-6">
+                    A founder spent 3 months debating between React and Vue. After our call, they had a clear roadmap, picked Next.js, and launched their MVP in a week.
+                  </p>
+                  <div className="bg-slate-50 p-4 rounded-xl border border-slate-100 italic text-slate-500">
+                    "I stopped overthinking and started shipping."
+                  </div>
+                </div>
               </div>
             </div>
           </div>
